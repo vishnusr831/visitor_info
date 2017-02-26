@@ -13,10 +13,11 @@ namespace VisitorInfo
 		{
 			InitializeComponent();
 
-			MainPage = new VisitorInfo.MainPage();
-		}
+            MainPage = new NavigationPage(new VisitorList());
 
-		protected override void OnStart ()
+        }
+
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

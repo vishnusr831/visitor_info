@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisitorInfo.VisitorList"
+             Title="Visitor List">
+    
+    <StackLayout>
+        <ListView ItemSelected="Handle_ItemSelected"
+        x:Name="listView"
+          AutomationId="testListView"    >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Text}"/>
+                    <!--  Detail="{Binding Detail}"/> -->
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
